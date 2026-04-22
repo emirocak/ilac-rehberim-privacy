@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaGuide - Gizlilik Politikası</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f1a2e;
+            color: #e0e0e0;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #00e5ff;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #fff;
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        p { margin-bottom: 16px; color: #ccc; }
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+        li { margin-bottom: 8px; color: #ccc; }
+        .highlight {
+            background: rgba(0,229,255,0.08);
+            border-left: 3px solid #00e5ff;
+            padding: 16px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .contact {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 32px;
+        }
+        .contact p { margin-bottom: 8px; }
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            color: #666;
+            font-size: 13px;
+        }
+        a { color: #00e5ff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PharmaGuide Gizlilik Politikası</h1>
+        <p class="subtitle">Son güncelleme: Nisan 2026</p>
+
+        <div class="highlight">
+            <p><strong>Özet:</strong> PharmaGuide, kişisel verilerinizi toplamaz, satmaz veya üçüncü taraflarla paylaşmaz. Arama geçmişiniz yalnızca cihazınızda saklanır.</p>
+        </div>
+
+        <h2>1. Toplanan Veriler</h2>
+        <p>PharmaGuide uygulaması aşağıdaki verileri toplar veya işler:</p>
+        <ul>
+            <li><strong>Arama Geçmişi:</strong> Aradığınız ilaç ve etken madde isimleri yalnızca cihazınızda (UserDefaults) saklanır. Sunucularımıza gönderilmez.</li>
+            <li><strong>Kullandığım İlaçlar Listesi:</strong> Kaydettiğiniz ilaçlar yalnızca cihazınızda saklanır.</li>
+            <li><strong>İlaç Sorguları:</strong> Arama yaptığınızda sorgunuz OpenAI API üzerinden işlenir. Bu sorgular anonim olup kişisel bilgi içermez.</li>
+            <li><strong>Cache Verileri:</strong> İlaç bilgileri performans için Firebase Firestore'da önbelleğe alınır. Bu veriler anonim ilaç bilgileridir ve kişisel veri içermez.</li>
+        </ul>
+
+        <h2>2. Kişisel Bilgiler</h2>
+        <p>PharmaGuide, aşağıdaki kişisel bilgileri <strong>toplamaz</strong>:</p>
+        <ul>
+            <li>Ad, soyad veya kimlik bilgileri</li>
+            <li>E-posta adresi veya telefon numarası</li>
+            <li>Konum bilgisi</li>
+            <li>Sağlık verileri veya tıbbi geçmiş</li>
+            <li>Cihaz tanımlayıcıları (reklam amaçlı)</li>
+        </ul>
+
+        <h2>3. Üçüncü Taraf Hizmetler</h2>
+        <p>Uygulama aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:</p>
+        <ul>
+            <li><strong>OpenAI API:</strong> İlaç bilgisi sorguları için kullanılır. OpenAI'nin gizlilik politikası için: <a href="https://openai.com/privacy" target="_blank">openai.com/privacy</a></li>
+            <li><strong>Firebase (Google):</strong> Uygulama yapılandırması ve veri önbelleğe alma için kullanılır. Google'ın gizlilik politikası için: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+            <li><strong>Google AdMob:</strong> Reklam gösterimi için kullanılır. Reklamlar kişiselleştirilmemiş olarak gösterilir. Google'ın reklam politikası için: <a href="https://policies.google.com/technologies/ads" target="_blank">policies.google.com/technologies/ads</a></li>
+            <li><strong>Apple StoreKit:</strong> Uygulama içi satın almalar Apple'ın ödeme sistemi üzerinden gerçekleşir.</li>
+        </ul>
+
+        <h2>4. Veri Saklama</h2>
+        <p>Cihazınızda saklanan veriler (arama geçmişi, kullandığım ilaçlar listesi) uygulamayı sildiğinizde otomatik olarak silinir. Firebase'deki önbellek verileri anonim ilaç bilgilerinden oluşur ve 30 gün sonra otomatik olarak temizlenir.</p>
+
+        <h2>5. Çocukların Gizliliği</h2>
+        <p>PharmaGuide 17 yaş ve üzeri kullanıcılar için tasarlanmıştır. 13 yaşından küçük çocuklardan bilerek kişisel veri toplamayız.</p>
+
+        <h2>6. Veri Güvenliği</h2>
+        <p>API anahtarları Firebase App Check ve iOS Keychain ile korunmaktadır. Tüm ağ iletişimi HTTPS üzerinden şifreli olarak gerçekleşir.</p>
+
+        <h2>7. Tıbbi Sorumluluk Reddi</h2>
+        <p>PharmaGuide yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiye yerine geçmez. Sunulan bilgiler yapay zeka tarafından oluşturulmaktadır ve hata içerebilir. İlaç kullanımı, dozaj değişikliği veya tedavi kararları için mutlaka doktorunuza veya eczacınıza danışınız.</p>
+
+        <h2>8. Değişiklikler</h2>
+        <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinden bildirilecektir.</p>
+
+        <h2>9. İletişim</h2>
+        <div class="contact">
+            <p>Gizlilik ile ilgili sorularınız için bize ulaşabilirsiniz:</p>
+            <p>📧 E-posta: <a href="mailto:emirrocak@gmail.com">emirrocak@gmail.com</a></p>
+            <p>📱 Telefon: 0532 153 34 31</p>
+            <p>📍 Adres: Hatay / İskenderun, Türkiye</p>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 PharmaGuide. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</body>
+</html>
